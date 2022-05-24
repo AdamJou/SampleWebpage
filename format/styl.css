@@ -1,0 +1,206 @@
+body {
+	background-color: #000000;
+	margin: 0;
+	padding: 0;
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	
+}
+
+
+ul, ul li {
+	display: contents;
+	border: 3px solid darkorange;
+	list-style: none;
+	margin: left;
+	padding: -3;
+	border-radius: 15px 50px 30px 5px;
+	box-border-radius: 2em;
+	
+}
+
+
+ul a:link, ul a:visited {
+	border: 2px outset darkorange;
+	display: block;
+	text-decoration: none;
+	text-shadow: 2px 2px #ff0000
+	background: linear-gradient(-45deg, #F0E68C, #FFD700);
+	color: 	white;
+	font-size: 2em;
+	font-weight: bold;
+	padding: 5px;
+	border-radius: 0px 30px 30px 0px;
+}
+
+ul a:hover {
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+	color: 	black;
+	border-radius: 0px 35px 35px 0px;
+	background: linear-gradient(-45deg, #F0E68C, #FFD700);
+}
+
+
+#naglowek {
+	height: 230px;
+	width: 100%;	
+	background-image: url('nagl2.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	transition: background-position 3s ease ;
+	}
+
+#naglowek:hover {
+	height: 230px;
+	width: 100%;	
+	background-image: url('nagl2.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+
+
+
+#menu {  
+	position: sticky;
+	width: 15%;
+	height: 8cm;
+	float: left;
+	margin: 0;
+	top: 0px;
+	
+}
+
+
+form{
+clear: right;
+
+}
+
+#tresc {
+	position: relative;
+	height: 21cm;
+	width: 58%;
+	margin-left: 20%;
+	background: linear-gradient(-45deg, #a15300, #f68800, #E49630, #ffbc00);
+	background-size: 400% 400%;
+	padding-top: 2cm;
+	border-style: groove;
+	border-radius: 2em;
+	color: 	white;
+	border-color: orange;
+	transition: background-position 10s ease-in-out ;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 35px;
+	text-align: center;	
+	animation: appear 20s ease-in-out infinite;
+}
+
+
+	
+}
+
+#tresc:hover {
+	position: relative;
+	height: 21cm;
+	width: 55%;
+	margin-left: 20%;
+	background: linear-gradient(-45deg, #FFDE1B, #FFD700, #ffde1b, #dde430);
+	background-size: 200% 200%;
+	padding-left: 2cm;
+	border-style: groove;
+	border-radius: 2em;
+	color: 	black;
+	border-color: orange;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation: appear 10s ease-in-out infinite;
+	
+}
+
+
+.box {
+	top: 20px;
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(-45deg, #000000, #FFD700, #000000, #000000);
+	border-radius: 200em;
+	position: relative;
+	animation: appear 10s ease-in-out infinite;
+	background-size: 400% 400%;
+	text-align: right;
+	margin-left: auto;
+  	margin-right: auto;
+		
+		
+
+}
+
+
+
+#triangle-right {
+        width: 60px;
+  height: 60px;
+  position: absolute;
+  	margin-top: -17%;
+	margin-left: 30%; 
+	rect(auto 60px 60px auto);
+	transform: scale(2.5);
+	transform: rotate(-180deg);	
+	 clip: rect(auto 30px 100px auto); 
+	
+}
+  
+
+
+
+#triangle-right:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7);
+  top: 8px;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+	
+	
+	-webkit-transform: rotate(-45deg);
+  background-image: linear-gradient(-45deg, orange, #FFD700, darkorange, yellow);
+}
+
+
+  
+@keyframes appear{
+	0% {
+	background-position: 0 50%;
+
+	}
+	50% {
+	background-position: 100% 50%;
+	}
+	100% {
+	background-position: 0% 50%;
+	}
+
+
+}
+
+
+.form{
+font-weight: bold;
+
+
+}
+
+#stopka {
+	background-color: orange;
+	width: 100%;
+	color: black;
+	position: relative;
+	top: 3cm;
+	text-align: center;
+}
